@@ -60,5 +60,4 @@ if ($loggedIn === "true") {
 } else {
     echo "ログインしてください";
 }
-
 ?>
