@@ -48,3 +48,17 @@ if ($input === "secret") {
     echo "パスワードが間違っています";
 }
 ?>
+<br>
+<?php
+//5. input.html と question3.php を連携させて、変数 $loggedIn = "true" の場合に「ようこそ」それ以外に場合には「ログインしてください」と表示するコードを書いてください。
+
+echo $_POST['login_status'];
+$loggedIn = $_POST['login_status'];
+// var_dump($loggedIn);
+if ($loggedIn === "true") {
+    echo "ようこそ";
+} else {
+    echo "ログインしてください";
+}
+
+?>
