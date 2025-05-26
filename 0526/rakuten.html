@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>楽天会員新規登録</title>
+</head>
+
+<body>
+    <h1>楽天会員登録</h1>
+    <p>会員登録済みではないですか？<a href="#">ログイン</a></p>
+    <form action="#" method="post">
+        <div>
+            <label for="email">メールアドレス(必須)</label> <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="email">メールアドレス再入力(必須)</label> <br>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="username">ユーザ名</label> <br>
+            <input type="text" id="name" name="username" required>
+        </div>
+        <input type="checkbox" id="useEmailAsUsername" name="useEmailAsUsername">
+        <label for="useEmailAsUsername">メールアドレスをユーザIDとして使用</label> <br>
+        <br>
+        <div>
+            <label for="password">パスワード(必須)</label> <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">パスワード再入力(必須)</label> <br>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <input type="checkbox">パズワードを表示 <br>
+        <div>
+            <label for="name">性(漢字) (必須)</label> <br>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <br>
+        <div>
+            <label for="name">名(漢字) (必須)</label> <br>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <br>
+        <div>
+            <label for="name">性(カタカナ) (必須)</label> <br>
+            <input type="text" id="lastName" name="lastName" required>
+        </div>
+        <br>
+        <div>
+            <label for="name">名(カタカナ) (必須)</label> <br>
+            <input type="text" id="firstName" name="firstName" required>
+        </div>
+        <br>
+
+        <p>以下に同意いただいた上で、会員登録をお願いお願いいたします。</p>
+        <a href="#">楽天会員に関する規約</a>
+        <br>
+        <a href="#">楽天会員に関する個人情報の取り扱いについて</a>
+        <br>
+        <input type="checkbox" id="agreement" name="agreement" required>
+        <label for="agreement">上記に同意します</label> <br>
+        <button type="submit">確認に進む</button>
+    </form>
+</body>
+
+</html>
