@@ -1,4 +1,3 @@
-<?php
 // 次の条件に従って、PHPでスコア判定プログラムを作成しなさい。
 // 0から100までのランダムな整数を変数$scoreに代入する。
 // $score = rand(0, 100);
@@ -7,12 +6,12 @@
 
 // 問題そのままで、記述方法を代替構文に変換して答えてください。
 
-$score = rand(0, 100);
+<?php $score = rand(0, 100); ?>
 echo "スコア: $score<br>";
 if ($score >= 80) {
-    echo "優";
+echo "優";
 } elseif ($score >= 60) {
-    echo "良";
+echo "良";
 } else {
-    echo "可";
+echo "可";
 }
