@@ -31,6 +31,7 @@
                 <th>更新</th>
                 <th>書籍名</th>
                 <th>ISBN</th>
+                <th>価格</th>
                 <th>出版日</th>
                 <th>著者名</th>
             </tr>
