@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/inc/functions.php';
+require_once __DIR__ . '/token_check.php';
 include __DIR__ . '/inc/error_check.php';
 include __DIR__ . '/inc/header.php';
 

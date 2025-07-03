@@ -4,6 +4,7 @@ require_once __DIR__ . '/inc/functions.php';
 include __DIR__ . '/inc/header.php';
 ?>
 
+
 <form method="post" action='login.php'>
     <p>
         <label for="username">ユーザー名:</label>
