@@ -19,13 +19,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/bbs/public/index.php">ホーム</a>
+                    <a class="nav-link" href="index.php">ホーム</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/bbs/public/future_post.php">新規投稿</a>
+                    <a class="nav-link" href="./future_post.php">新規投稿</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/bbs/public/revealed_posts.php">公開された投稿</a>
+                    <a class="nav-link" href="./revealed_posts.php">公開された投稿</a>
                 </li>
             </ul>
         </div>
