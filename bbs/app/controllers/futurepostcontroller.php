@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../../config/config.php';
+$config = require_once __DIR__ . '/../../config/config.php';
 require_once __DIR__ . '/../models/future_post.php';
 require_once __DIR__ . '/../../functions.php';
 
@@ -23,12 +23,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
     if ($future_date === '') {
         $errors[] = '公開予定日を選択してください。';
-    } else {
-        $selected_date = strtotime($future_date);
-        $tomorrow = strtotime(date('Y-m-d', strtotime('+1 day')));
-        if ($selected_date < $tomorrow) {
-            $errors[] = '公開予定日は明日以降の日付を選択してください。';
-        }
     }
 
     if (empty($errors)) {
@@ -39,4 +33,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 // ビューの読み込み
-require __DIR__ . '/../views/future_post.php';
+$view_to_include = __DIR__ . '/../views/future_post.php';
+require __DIR__ . '/../views/layout.php';

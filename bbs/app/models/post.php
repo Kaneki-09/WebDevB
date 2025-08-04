@@ -2,7 +2,7 @@
 
 function get_all_posts($pdo)
 {
-    $stmt = $pdo->query("SELECT * FROM posts ORDER BY created_at DESC");
+    $stmt = $pdo->query("SELECT * FROM posts WHERE reveal_date <= NOW() OR reveal_date IS NULL ORDER BY created_at DESC");
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
 
